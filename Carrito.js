@@ -65,7 +65,7 @@ export default class Carrito {
           return acumulador + (producto.cantidad * producto.price);
         }, 0);
         
-        //Devolvemos primero el objeto completo con el total obtenido y los productos
+        //Devolvemos primero el objeto completo con el total obtenido, la moneda y los productos.
         return {
           total: finalFinal.toFixed(2),
           currency: "€",
